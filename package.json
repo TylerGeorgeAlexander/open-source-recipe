@@ -1,7 +1,7 @@
 {
-  "name": "binary-upload-boom",
+  "name": "openSourceRecipe",
   "version": "1.0.0",
-  "description": "100Devs Social Network",
+  "description": "100Devs Food Network",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
