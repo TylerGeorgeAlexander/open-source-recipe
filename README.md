@@ -17,4 +17,7 @@
 
 # Run
 
+terminal 1
 `npm start`
+terminal 2
+`npm run tailwindcss`

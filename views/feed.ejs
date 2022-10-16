@@ -5,7 +5,11 @@
         <% for(var i=0; i<recipes.length; i++) {%>
           <li class="col-6 justify-content-between mt-5">
             <a href="/post/<%= recipes[i]._id%>">
+              <h3><%= recipes[i].name%></h3>
+              <span><%= recipes[i].ingredients%></span>
               <img class="img-fluid" src="<%= recipes[i].image%>">
+              <span><%= recipes[i].directions%></span>
+              <!-- TODO some sort of favorites count or likes -->
             </a>
           </li>
         <% } %>
