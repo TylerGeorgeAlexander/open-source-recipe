@@ -19,23 +19,23 @@ const RecipeSchema = new mongoose.Schema({
   },
   difficulty: {
     type: String,
-    // required: true,
+    required: true,
   },
   description: {
     type: String,
-    // required: true,
+    required: true,
   },
   timeRange: {
     type: String,
-    // required: true,
+    required: true,
   },
   serves: {
     type: String,
-    // required: true,
+    required: true,
   },
   description: {
     type: String,
-    // required: true,
+    required: true,
   },
   directions: {
     type: String,
