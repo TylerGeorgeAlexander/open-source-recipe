@@ -17,6 +17,26 @@ const RecipeSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  difficulty: {
+    type: String,
+    // required: true,
+  },
+  description: {
+    type: String,
+    // required: true,
+  },
+  timeRange: {
+    type: String,
+    // required: true,
+  },
+  serves: {
+    type: String,
+    // required: true,
+  },
+  description: {
+    type: String,
+    // required: true,
+  },
   directions: {
     type: String,
     required: true,
