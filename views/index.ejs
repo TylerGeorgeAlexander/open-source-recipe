@@ -1,11 +1,59 @@
 <%- include('partials/header') -%>
 
 <main class="container">
-    <div class="row justify-content-around mt-5">
-        <a href="/login" class="col-3 btn btn-primary"> Login</a>
-        <a href="/signup" class="col-3 btn btn-primary"> Signup</a>
+  <!-- HERO -->
+  <div
+    class="hero min-h-screen"
+    style="background-image: url(https://placeimg.com/1000/800/arch)"
+  >
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="hero-content text-center text-neutral-content">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+        <p class="mb-5">
+          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+          excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a
+          id nisi.
+        </p>
+        <button class="btn btn-primary">Get Started</button>
+      </div>
     </div>
+  </div>
+  <div class="row justify-content-around mt-5">
+    <a href="/login" class="col-3 btn btn-primary"> Login</a>
+    <a href="/signup" class="col-3 btn btn-primary"> Signup</a>
+    <!-- TODO demo log in -->
+    <div class="flex justify-content-center text-center">
+      <form action="/login" method="POST">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label hidden"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control hidden"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            name="email"
+            value="asdf@asdf.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label hidden"
+            >Password</label
+          >
+          <input
+            type="password"
+            class="form-control hidden"
+            id="exampleInputPassword1"
+            name="password"
+            value="asdfasdf"
+          />
+        </div>
+        <button type="submit" class="btn btn-secondary m-4">DEMO SIGN IN</button>
+      </form>
+    </div>
+  </div>
 </main>
-    
 
 <%- include('partials/footer') -%>
