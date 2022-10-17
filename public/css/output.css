@@ -2988,6 +2988,10 @@ html {
   margin: 1rem;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -3055,6 +3059,10 @@ html {
 
 .h-5 {
   height: 1.25rem;
+}
+
+.h-48 {
+  height: 12rem;
 }
 
 .min-h-screen {
@@ -3182,6 +3190,11 @@ html {
 
 .bg-fixed {
   background-attachment: fixed;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-2 {
