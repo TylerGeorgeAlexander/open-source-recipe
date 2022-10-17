@@ -1,7 +1,7 @@
 <%- include('partials/header') -%>
 <div class="container">
   <div class="row justify-content-center mt-5">
-    <div class="col-6">
+    <div class="col-12">
       <h2><%= recipe.name %></h2>
       <img class="img-fluid" src="<%= recipe.image%>" />
       <div class="row justify-content-between">
@@ -20,7 +20,7 @@
         >
           <button class="btn btn-primary fa fa-star" type="submit"></button>
         </form>
-        <h3 class="col-3">Likes: <%= recipe.likes %></h3>
+
         <%if(recipe.user == user.id){ %>
         <form
           action="/recipe/deleteRecipe/<%= recipe.id %>?_method=DELETE"
@@ -30,13 +30,17 @@
           <button class="btn btn-primary fa fa-trash" type="submit"></button>
         </form>
         <%}%>
+
+        <div class="col-12">
+          <h3 class="text-center">Likes: <%= recipe.likes %></h3>
+        </div>
       </div>
     </div>
-    <div class="col-3 mt-5">
+    <div class="col-12 mt-5">
       <p><%= recipe.ingredients %></p>
       <p><%= recipe.directions %></p>
     </div>
-    <div class="col-6 mt-5">
+    <div class="col-12 mt-5 text-center">
       <a class="btn btn-primary" href="/profile">Return to Profile</a>
       <a class="btn btn-primary" href="/feed">Return to Feed</a>
     </div>
